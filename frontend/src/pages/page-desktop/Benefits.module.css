@@ -1,0 +1,230 @@
+.benefitsForWorking {
+  margin: 0;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+.benefitsForWorkingHereWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+}
+.frameChild {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--black);
+  width: 613.1px;
+  height: 5px;
+}
+.titleInner {
+  align-self: stretch;
+  position: relative;
+  height: 25px;
+}
+.title {
+  width: 607.4px;
+  height: 160.1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.continuousLearningAnd,
+.weInvestIn {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.continuousLearningAnd {
+  align-self: stretch;
+  height: 21px;
+}
+.weInvestIn {
+  line-height: 170%;
+  width: 391px;
+  height: 105.6px;
+}
+.continuosGrowth,
+.weInvestInOurEmployeesGrWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.weInvestInOurEmployeesGrWrapper {
+  flex-direction: row;
+  padding: var(--padding-3xs) 0;
+  font-size: var(--bodytext1-size);
+}
+.continuosGrowth {
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.adoptARoomba1,
+.allOfOur {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.adoptARoomba1 {
+  align-self: stretch;
+  height: 22px;
+}
+.allOfOur {
+  line-height: 170%;
+  width: 391px;
+  height: 114.6px;
+}
+.adoptARoomba {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.communityAndCollaboration1 {
+  align-self: stretch;
+  position: relative;
+  display: inline-block;
+  height: 29px;
+  flex-shrink: 0;
+}
+.workAlongsideLikeMinded {
+  position: relative;
+  line-height: 170%;
+  display: inline-block;
+  width: 391px;
+  height: 86.6px;
+  flex-shrink: 0;
+}
+.communityAndCollaboration {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 21px;
+}
+.alltext {
+  width: 614px;
+  height: 488px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 9px 0;
+  box-sizing: border-box;
+  font-size: var(--paragraph-ibm-plex-sans-regular-size);
+}
+.label1 {
+  flex: 1;
+  position: relative;
+  font-size: var(--maintext-size);
+  font-family: var(--smaller-bodytext);
+  color: var(--white);
+  text-align: center;
+}
+.availposition,
+.label {
+  align-self: stretch;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.availposition {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs) var(--padding-base);
+  background-color: var(--dark-gold);
+  border-radius: var(--br-7xs);
+  flex-direction: column;
+  justify-content: center;
+}
+.buttons,
+.textbody {
+  display: flex;
+  justify-content: flex-start;
+}
+.buttons {
+  width: 622px;
+  height: 51px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 57px;
+}
+.textbody {
+  position: absolute;
+  height: 99.94%;
+  width: 72.87%;
+  top: 0.06%;
+  right: 24.91%;
+  bottom: 0;
+  left: 2.22%;
+  flex-direction: column;
+  align-items: center;
+}
+.pexelsJensMahnke8448741Icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.pexelsJensMahnke8448741 {
+  position: absolute;
+  top: calc(50% - 154.2px);
+  left: calc(50% + 0.5px);
+  width: 407px;
+  height: 335px;
+}
+.content {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  background-color: var(--soft-grey);
+}
+.benefits,
+.benefits1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.benefits1 {
+  align-self: stretch;
+  flex: 1;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--robo-size);
+  color: var(--black);
+  font-family: var(--smaller-bodytext);
+}
+.benefits {
+  position: relative;
+  border-radius: 1.19px;
+  background-color: var(--soft-grey);
+  width: 100%;
+  height: 1104px;
+}

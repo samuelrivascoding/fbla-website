@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --smaller-bodytext: "Libre Baskerville";
+  --paragraph-ibm-plex-sans-regular: "IBM Plex Sans";
+
+  /* font sizes */
+  --bodytext-size: 8px;
+  --maintext-size: 17px;
+  --paragraph-ibm-plex-sans-regular-size: 16px;
+  --header1-size: 32px;
+  --smaller-bodytext-size: 6px;
+  --robo-mobile-size: 25px;
+  --maintext1-size: 13px;
+  --largerbodytext1-size: 18px;
+  --header-size: 65px;
+  --font-size-4xs-4: 8.4px;
+  --robo-size: 50px;
+  --bodytext1-size: 12px;
+
+  /* Colors */
+  --soft-grey: #e4e4e4;
+  --black: #1e1e1e;
+  --grey: #151620;
+  --very-dark-blue: #0a1539;
+  --white: #fff;
+  --dark-gold: #886a2f;
+  --surface-light: #f8fafc;
+  --text-secondary-grey3: #b8bcca;
+  --text-secondary-grey2: #6f7482;
+  --red: #951313;
+  --color-black: #000;
+
+  /* Gaps */
+  --gap-3xs-8: 9.8px;
+  --gap-79xl-3: 98.3px;
+  --gap-3xs: 10px;
+  --gap-xs: 12px;
+  --gap-11xs: 2px;
+  --gap-10xs-9: 2.9px;
+  --gap-8xs-9: 4.9px;
+  --gap-mini: 15px;
+  --gap-56xl: 75px;
+  --gap-181xl: 200px;
+  --gap-xl: 20px;
+  --gap-7xs-9: 5.9px;
+  --gap-236xl-3: 255.3px;
+  --gap-58xl: 77px;
+
+  /* Paddings */
+  --padding-10xs-9: 2.9px;
+  --padding-9xs: 4px;
+  --padding-base: 16px;
+  --padding-xl: 20px;
+  --padding-xs: 12px;
+  --padding-3xs: 10px;
+  --padding-14xl: 33px;
+  --padding-3xl: 22px;
+  --padding-8xs: 5px;
+  --padding-7xs-9: 5.9px;
+  --padding-8xs-9: 4.9px;
+  --padding-11xs: 2px;
+  --padding-5xs-9: 7.9px;
+  --padding-12xs: 1px;
+
+  /* Border radiuses */
+  --br-7xs: 6px;
+  --br-9xs: 4px;
+  --br-10xs: 3px;
+  --br-11xs-2: 1.2px;
+}

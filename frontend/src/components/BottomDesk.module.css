@@ -1,0 +1,67 @@
+.innovateAndSell {
+  position: relative;
+}
+.innovate {
+  position: absolute;
+  height: 26.15%;
+  width: 35.43%;
+  top: 17.3%;
+  right: 32.35%;
+  bottom: 56.56%;
+  left: 32.22%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5.9375px;
+  box-sizing: border-box;
+}
+.privacyPolicy,
+.robosweepEmporium,
+.termsConditions {
+  position: relative;
+  display: inline-block;
+  width: 213px;
+  flex-shrink: 0;
+}
+.privacyPolicy,
+.termsConditions {
+  width: 184px;
+}
+.privacyPolicy {
+  width: 139px;
+}
+.info,
+.termpolicy {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+}
+.termpolicy {
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  text-align: center;
+  color: var(--soft-grey);
+}
+.info {
+  position: absolute;
+  top: calc(50% + 1px);
+  left: calc(50% - 361.3px);
+  align-items: flex-end;
+  justify-content: center;
+  gap: var(--gap-181xl);
+  text-align: left;
+  font-size: var(--maintext-size);
+}
+.bottom {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--very-dark-blue);
+  height: 122px;
+  text-align: center;
+  font-size: var(--paragraph-ibm-plex-sans-regular-size);
+  color: var(--white);
+  font-family: var(--smaller-bodytext);
+}

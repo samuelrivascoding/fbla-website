@@ -1,0 +1,110 @@
+.frameChild {
+  position: absolute;
+  top: calc(50% - 44px);
+  left: calc(50% - 58px);
+  width: 116px;
+  height: 88px;
+  object-fit: cover;
+}
+.vectorWrapper {
+  position: relative;
+  width: 116px;
+  height: 88px;
+}
+.robosweep {
+  margin: 0;
+}
+.robosweepEmporium {
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.frameParent {
+  align-self: stretch;
+  height: 115px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.locations {
+  display: inline-block;
+  width: 95px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.label,
+.locations {
+  position: relative;
+}
+.apply {
+  width: 82px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.shop {
+  position: absolute;
+  height: 36.06%;
+  width: 74.8%;
+  top: 22.42%;
+  left: 12.55%;
+  font-size: var(--maintext-size);
+  display: inline-block;
+  font-family: var(--smaller-bodytext);
+  color: var(--white);
+  text-align: center;
+}
+.shopWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--dark-gold);
+  position: relative;
+  width: 98px;
+  height: 33px;
+}
+.buttons,
+.completetitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: var(--smaller-bodytext);
+}
+.buttons {
+  margin: 0;
+  width: 370px;
+  height: 53px;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0;
+  box-sizing: border-box;
+  font-size: var(--maintext-size);
+  color: var(--white);
+}
+.completetitle {
+  align-self: stretch;
+  background-color: var(--very-dark-blue);
+  border-bottom: 4px solid var(--dark-gold);
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-3xs) var(--padding-3xl);
+  gap: var(--gap-3xs);
+  font-size: var(--header1-size);
+  color: var(--soft-grey);
+}
+@media screen and (max-width: 420px) {
+  .frameParent {
+    flex-direction: row;
+    gap: var(--gap-56xl);
+    align-items: center;
+    justify-content: center;
+  }
+}

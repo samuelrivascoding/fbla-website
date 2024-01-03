@@ -1,0 +1,235 @@
+.benefitsForWorking {
+  margin: 0;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+.benefitsForWorkingHereWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4.912280559539795px;
+}
+.frameChild {
+  position: absolute;
+  top: 4.9px;
+  left: 4.9px;
+  background-color: var(--black);
+  width: 301.2px;
+  height: 2.5px;
+}
+.titleInner {
+  align-self: stretch;
+  position: relative;
+  height: 12.3px;
+}
+.title {
+  width: 298.4px;
+  height: 78.6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.continuousLearningAnd,
+.weInvestIn {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.continuousLearningAnd {
+  align-self: stretch;
+  height: 10.3px;
+}
+.weInvestIn {
+  line-height: 170%;
+  width: 192.1px;
+  height: 51.9px;
+}
+.continuosGrowth,
+.weInvestInOurEmployeesGrWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.weInvestInOurEmployeesGrWrapper {
+  flex-direction: row;
+  padding: 4.912280559539795px 0;
+  font-size: var(--smaller-bodytext-size);
+}
+.continuosGrowth {
+  flex-direction: column;
+  gap: 4.91px;
+}
+.adoptARoomba1,
+.allOfOur {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.adoptARoomba1 {
+  align-self: stretch;
+  height: 10.8px;
+}
+.allOfOur {
+  line-height: 170%;
+  width: 192.1px;
+  height: 56.3px;
+}
+.adoptARoomba {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.communityAndCollaboration1 {
+  align-self: stretch;
+  position: relative;
+  display: inline-block;
+  height: 14.2px;
+  flex-shrink: 0;
+}
+.workAlongsideLikeMinded {
+  position: relative;
+  line-height: 170%;
+  display: inline-block;
+  width: 192.1px;
+  height: 42.6px;
+  flex-shrink: 0;
+}
+.communityAndCollaboration {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10.32px;
+}
+.alltext {
+  width: 301.6px;
+  height: 239.7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 4.4210524559021px 0;
+  box-sizing: border-box;
+  font-size: var(--bodytext-size);
+}
+.label1 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-4xs-4);
+  font-family: var(--smaller-bodytext);
+  color: var(--white);
+  text-align: center;
+}
+.label {
+  align-self: stretch;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.availposition,
+.buttons {
+  height: 25.1px;
+  display: flex;
+}
+.availposition {
+  cursor: pointer;
+  border: 0;
+  padding: 1.9649122953414917px 7.859649181365967px;
+  background-color: var(--dark-gold);
+  border-radius: 2.95px;
+  width: 138.8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.buttons {
+  width: 305.5px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 28px;
+}
+.textbody {
+  position: absolute;
+  height: 99.94%;
+  width: 72.86%;
+  top: 0.06%;
+  right: 24.93%;
+  bottom: 0;
+  left: 2.21%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pexelsJensMahnke8448741Icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.pexelsJensMahnke8448741 {
+  position: absolute;
+  top: calc(50% - 75.8px);
+  left: calc(50% + 0.2px);
+  width: 199.9px;
+  height: 164.6px;
+}
+.content {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  background-color: var(--soft-grey);
+}
+.benefits,
+.benefitsMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.benefits {
+  align-self: stretch;
+  flex: 1;
+  gap: 9.82px;
+  text-align: left;
+  font-size: var(--robo-mobile-size);
+  color: var(--black);
+  font-family: var(--smaller-bodytext);
+}
+.benefitsMobile {
+  position: relative;
+  background-color: var(--soft-grey);
+  width: 100%;
+  height: 542.3px;
+}

@@ -1,0 +1,136 @@
+.wrapperRectangle3Child {
+  align-self: stretch;
+  flex: 1;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.277);
+}
+.wrapperRectangle3,
+.wrapperRectangle3Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperRectangle3 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.wrapperRectangle3Wrapper {
+  width: 484px;
+  height: 706px;
+  flex-direction: column;
+}
+.contentInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 29px 18px;
+}
+.aboutUs1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+.aboutUs,
+.aboutUsWrapper {
+  align-self: stretch;
+  height: 147px;
+  display: flex;
+  align-items: center;
+}
+.aboutUsWrapper {
+  border-bottom: 4px solid var(--color-black);
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+}
+.aboutUs {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.welcomeToRobosweep {
+  margin: 0;
+}
+.welcomeToRobosweepContainer {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  line-height: 170%;
+  mix-blend-mode: normal;
+}
+.welcomeToRobosweepEmporiumWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.textbody,
+.textbodyInner {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textbodyInner {
+  justify-content: flex-start;
+  font-size: var(--bodytext1-size);
+  color: var(--grey);
+}
+.textbody {
+  justify-content: center;
+  padding: 30px 0;
+  gap: 18px;
+}
+.content,
+.homepage,
+.homepage1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: row;
+  padding: 0 57px 0 0;
+  gap: 29px;
+}
+.homepage,
+.homepage1 {
+  flex-direction: column;
+}
+.homepage1 {
+  align-self: stretch;
+  flex: 1;
+  text-align: left;
+  font-size: var(--robo-size);
+  color: var(--black);
+  font-family: var(--smaller-bodytext);
+}
+.homepage {
+  position: relative;
+  border-radius: 1.19px;
+  background-color: var(--soft-grey);
+  width: 100%;
+  height: 1188px;
+  mix-blend-mode: normal;
+}

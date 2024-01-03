@@ -1,0 +1,93 @@
+.label1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-size: var(--bodytext-size);
+  display: flex;
+  font-family: var(--smaller-bodytext);
+  color: var(--white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.button,
+.label {
+  position: absolute;
+  overflow: hidden;
+}
+.label {
+  height: 75.16%;
+  width: 58.47%;
+  top: 12.74%;
+  right: 20.63%;
+  bottom: 12.1%;
+  left: 20.9%;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--dark-gold);
+  top: calc(50% - 51.6px);
+  left: calc(50% - 151px);
+  border-radius: 2.95px;
+  width: 37.8px;
+  height: 15.7px;
+}
+.robosweep {
+  margin: 0;
+}
+.robosweepEmporium {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 236.5px;
+  flex-shrink: 0;
+}
+.instanceChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.titleInner {
+  position: relative;
+  width: 73.8px;
+  height: 56.3px;
+}
+.title {
+  position: absolute;
+  height: 69.08%;
+  width: 75.76%;
+  top: 23.08%;
+  right: 10.21%;
+  bottom: 7.84%;
+  left: 14.02%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.92px;
+}
+.completeTitleMobile {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--very-dark-blue);
+  height: 114.8px;
+  text-align: left;
+  font-size: var(--header1-size);
+  color: var(--soft-grey);
+  font-family: var(--smaller-bodytext);
+}

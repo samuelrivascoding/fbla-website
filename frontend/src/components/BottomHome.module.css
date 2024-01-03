@@ -1,0 +1,60 @@
+.robosweepEmporium {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+}
+.info,
+.termpolicy {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+.termpolicy {
+  align-self: stretch;
+  flex: 1;
+  text-align: center;
+  color: var(--soft-grey);
+}
+.info {
+  position: absolute;
+  height: 30.61%;
+  width: 81.4%;
+  top: 41.74%;
+  right: 9.94%;
+  bottom: 27.65%;
+  left: 8.65%;
+  gap: 255.31px;
+}
+.bottom,
+.innovate {
+  box-sizing: border-box;
+}
+.innovate {
+  position: absolute;
+  height: 16.52%;
+  width: 81.44%;
+  top: 14.09%;
+  right: 9.2%;
+  bottom: 69.39%;
+  left: 9.36%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5.9375px;
+  text-align: center;
+  font-size: var(--paragraph-ibm-plex-sans-regular-size);
+}
+.bottom {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--very-dark-blue);
+  border-top: 10px solid var(--dark-gold);
+  height: 132px;
+  mix-blend-mode: normal;
+  text-align: left;
+  font-size: var(--maintext-size);
+  color: var(--white);
+  font-family: var(--smaller-bodytext);
+}

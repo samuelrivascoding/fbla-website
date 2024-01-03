@@ -1,0 +1,110 @@
+.locations {
+  display: inline-block;
+  width: 95px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.label,
+.locations {
+  position: relative;
+}
+.apply {
+  width: 82px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.shop {
+  position: absolute;
+  height: 36.06%;
+  width: 74.8%;
+  top: 22.42%;
+  left: 12.55%;
+  font-size: var(--maintext-size);
+  display: inline-block;
+  font-family: var(--smaller-bodytext);
+  color: var(--white);
+  text-align: center;
+}
+.shopWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--dark-gold);
+  position: relative;
+  width: 98px;
+  height: 33px;
+}
+.buttons {
+  margin: 0;
+  position: absolute;
+  height: 18.4%;
+  width: 43.27%;
+  top: 6.94%;
+  right: 31.23%;
+  bottom: 74.65%;
+  left: 25.5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--maintext-size);
+  color: var(--white);
+  font-family: var(--smaller-bodytext);
+}
+.titleChild {
+  position: relative;
+  width: 248px;
+  height: 190px;
+  object-fit: cover;
+}
+.robosweep {
+  margin: 0;
+}
+.robosweepEmporium {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 488px;
+  height: 162px;
+  flex-shrink: 0;
+}
+.title {
+  position: absolute;
+  height: 44.27%;
+  width: 93.8%;
+  top: 30.56%;
+  right: 4.25%;
+  bottom: 25.17%;
+  left: 1.95%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-12xs) 0;
+  box-sizing: border-box;
+  gap: var(--gap-58xl);
+}
+.completeTitle {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--very-dark-blue);
+  border-bottom: 10px solid var(--dark-gold);
+  box-sizing: border-box;
+  height: 298px;
+  text-align: left;
+  font-size: var(--header-size);
+  color: var(--white);
+  font-family: var(--smaller-bodytext);
+}
