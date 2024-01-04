@@ -8,7 +8,7 @@ const app = express();
 const path = require('path');
 
 
-app.use(express.static(path.join(__dirbacname, 'client/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 
 const corsOptions = {
@@ -24,8 +24,8 @@ app.use(cors(corsOptions));
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST || '127.0.0.1',
-  user: process.env.DB_USER || 'root',
-  password: process.env.DB_PASSWORD || '',
+  user: process.env.DB_USER || 'beans23',
+  password: process.env.DB_PASSWORD || 'beans23',
   database: process.env.DB_NAME || 'jobapps',
 });
 

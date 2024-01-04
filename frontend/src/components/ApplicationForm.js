@@ -40,11 +40,16 @@ const ApplicationForm = () => {
         setEmailValid(false);
       }
     } else if (fieldName === 'phonenumber') {
-      setPhoneNumberValid(validatePhoneNumber(fieldValue));
-    }
-  };
+      if (fieldValue.trim() === '' || validatePhoneNumber(fieldValue)) {
+        setPhoneNumberValid(true);
+      } else {
+        setPhoneNumberValid(false);
+      }
+  }
+};
 
   const emailRegex = /^\S+@\S+\.\S+$/;
+  const phoneRegex = /^[0-9]{10}$/;
 
 
 
@@ -53,7 +58,6 @@ const ApplicationForm = () => {
   };
 
   const validatePhoneNumber = (phoneNumber) => {
-    const phoneRegex = /^[0-9]{10}$/;
     return phoneRegex.test(phoneNumber);
   };
 
@@ -72,7 +76,7 @@ const ApplicationForm = () => {
     }
   
     try {
-      const response = await axios.post('http://localhost:3005/application', formData);
+      
 
       if (!validateEmail(formData.email)) {
         setErrorMessage("Error! Please enter a valid email address.");
@@ -85,6 +89,8 @@ const ApplicationForm = () => {
         setShowErrorPopup(true);
         return;
       }
+
+      const response = await axios.post('http://localhost:3005/application', formData);
 
       if (response.status === 200) {
         console.log('Form data submitted successfully');
