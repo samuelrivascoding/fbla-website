@@ -20,7 +20,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
-app.use(cors(corsOptions));
 
 const db = mysql.createConnection({
   host: process.env.DB_HOST || '127.0.0.1',
