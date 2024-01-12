@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const PORT = process.env.PORT || 3005;
-const origin = 'http://localhost:3000';
+const origin = process.env.PORT || 'http://localhost:3000';
 const app = express();
 const path = require('path');
 
