@@ -2,34 +2,37 @@ const mysql = require('mysql2');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const PORT = process.env.PORT || 3005;
-const origin = process.env.ORIGIN || 'https://fblawebsitebeans23.onrender.com/';
 const app = express();
 const path = require('path');
+const PORT = process.env.PORT || 3005;
+const origin = process.env.ORIGIN || 'https://fblawebsitebeans23.onrender.com/';
 
-
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-
-const corsOptions = {
-  origin: origin,
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-  headers: {
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Access-Control-Allow-Methods': 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  },
-};
-
-app.use(cors(corsOptions));
-app.use(bodyParser.json());
-
-const db = mysql.createConnection({
+const dbConfig = {
   host: process.env.DB_HOST || '127.0.0.1',
   user: process.env.DB_USER || 'beans23',
   password: process.env.DB_PASSWORD || 'beans23',
   database: process.env.DB_NAME || 'jobapps',
+};
+
+
+app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(bodyParser.json());
+app.use(cors({
+  origin: origin,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204,
+  allowedHeaders: 'Content-Type',
+}));
+
+const db = mysql.createConnection(dbConfig);
+
+db.connect((err) => {
+  if (err) {
+    console.error('Error connecting to MySQL:', err);
+  } else {
+    console.log('Connected to MySQL database');
+  }
 });
 
 
@@ -52,12 +55,10 @@ app.get('/', (req,res)=> {
   return res.json("hello");
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
-
-app.use(express.static(path.join(__dirname, 'client/build')));
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
