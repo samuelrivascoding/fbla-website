@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 const PORT = process.env.PORT || 3005;
-const origin = process.env.ORIGIN || 'https://fblawebsitebeans23.onrender.com/';
+const origin = process.env.ORIGIN || 'https://fblawebsitebeans23.onrender.com';
 
 const dbConfig = {
   host: process.env.DB_HOST || '127.0.0.1',
