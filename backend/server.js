@@ -7,6 +7,8 @@ const path = require('path');
 const PORT = process.env.PORT || 3005;
 const origin = process.env.ORIGIN || 'https://fblawebsitebeans23.onrender.com';
 
+console.log('Origin:', origin);
+
 const dbConfig = {
   host: process.env.DB_HOST || '127.0.0.1',
   user: process.env.DB_USER || 'beans23',
