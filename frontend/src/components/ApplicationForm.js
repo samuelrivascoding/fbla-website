@@ -4,8 +4,7 @@ import axios from 'axios';
 import styles from "./ApplicationForm.module.css";
 import ErrorPopUp from "./ErrorPopUp";
 
-
-
+const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3005/application';
 
 const ApplicationForm = () => {
   const navigate = useNavigate();
@@ -90,7 +89,7 @@ const ApplicationForm = () => {
         return;
       }
 
-      const response = await axios.post('http://localhost:3005/application', formData);
+      const response = await axios.post(backendUrl, formData);
 
       if (response.status === 200) {
         console.log('Form data submitted successfully');
