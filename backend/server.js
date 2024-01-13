@@ -19,7 +19,7 @@ const dbConfig = {
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.json());
-const CorsOptions = {
+const corsOptions = {
   origin: origin,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
