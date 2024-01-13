@@ -19,13 +19,16 @@ const dbConfig = {
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.json());
-app.use(cors({
+const CorsOptions = {
   origin: origin,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204,
-  allowedHeaders: 'Content-Type',
-}));
+  allowedHeaders: 'Content-Type, Authorization',
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 const db = mysql.createConnection(dbConfig);
 
