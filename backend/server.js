@@ -1,53 +1,40 @@
-const mysql = require('mysql2');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
-const path = require('path');
+const origin = process.env.ORIGIN || 'localhost:3000';
 const PORT = process.env.PORT || 3005;
-const origin = process.env.ORIGIN || 'https://fblawebsitebeans23.onrender.com';
 
-console.log('Origin:', origin);
+const { Client } = require('pg');
 
 const dbConfig = {
   host: process.env.DB_HOST || '127.0.0.1',
   user: process.env.DB_USER || 'beans23',
   password: process.env.DB_PASSWORD || 'beans23',
   database: process.env.DB_NAME || 'jobapps',
+  port: process.env.PORT || 3005,
 };
 
-
-app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser.json());
-const corsOptions = {
-  origin: origin,
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-  allowedHeaders: 'Content-Type, Authorization',
-};
+app.use(cors());
 
-app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
+const db = new Client(dbConfig);
 
-const db = mysql.createConnection(dbConfig);
+db.connect()
+  .then(() => console.log('Connected to PostgreSQL database'))
+  .catch(err => console.error('Error connecting to PostgreSQL:', err));
 
-db.connect((err) => {
-  if (err) {
-    console.error('Error connecting to MySQL:', err);
-  } else {
-    console.log('Connected to MySQL database');
-  }
+db.on('error', (err) => {
+  console.error('PostgreSQL connection error:', err);
 });
-
 
 app.post('/application', (req, res) => {
   const { firstname, lastname, email, phonenumber, jobposition } = req.body;
 
-  const sql = 'INSERT INTO application (firstname, lastname, email, phonenumber, jobposition) VALUES (?, ?, ?, ?, ?)';
+  const sql = 'INSERT INTO application (firstname, lastname, email, phonenumber, jobposition) VALUES ($1, $2, $3, $4, $5)';
   db.query(sql, [firstname, lastname, email, phonenumber, jobposition], (err, result) => {
     if (err) {
-      console.error('MySQL insertion error:', err);
+      console.error('PostgreSQL insertion error:', err);
       res.status(500).send('Internal Server Error');
     } else {
       console.log('Data inserted successfully');
@@ -58,10 +45,6 @@ app.post('/application', (req, res) => {
 
 app.get('/', (req,res)=> {
   return res.json("hello");
-});
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
 
 app.listen(PORT, () => {
