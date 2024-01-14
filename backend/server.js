@@ -7,11 +7,7 @@ const PORT = process.env.PORT || 3005;
 const { Client } = require('pg');
 
 const dbConfig = {
-  host: process.env.DB_HOST || '127.0.0.1',
-  user: process.env.DB_USER || 'beans23',
-  password: process.env.DB_PASSWORD || 'beans23',
-  database: process.env.DB_NAME || 'jobapps',
-  port: process.env.PORT || 3005,
+  connectionString: process.env.DATABASE_URL,
 };
 
 app.use(bodyParser.json());
