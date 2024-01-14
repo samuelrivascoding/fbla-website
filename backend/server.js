@@ -17,25 +17,36 @@ const db = new Client(dbConfig);
 
 db.connect()
   .then(() => console.log('Connected to PostgreSQL database'))
-  .catch(err => console.error('Error connecting to PostgreSQL:', err));
+  .catch(err => {
+    console.error('Error connecting to PostgreSQL:', err);
+    process.exit(1); // Exit the process on connection error
+  });
 
 db.on('error', (err) => {
   console.error('PostgreSQL connection error:', err);
+  // Attempt to reconnect
+  db.connect()
+    .then(() => console.log('Reconnected to PostgreSQL database'))
+    .catch(err => console.error('Error reconnecting to PostgreSQL:', err));
 });
 
-app.post('/application', (req, res) => {
+app.post('/application', async (req, res) => {
   const { firstname, lastname, email, phonenumber, jobposition } = req.body;
 
-  const sql = 'INSERT INTO application (firstname, lastname, email, phonenumber, jobposition) VALUES ($1, $2, $3, $4, $5)';
-  db.query(sql, [firstname, lastname, email, phonenumber, jobposition], (err, result) => {
-    if (err) {
-      console.error('PostgreSQL insertion error:', err);
-      res.status(500).send('Internal Server Error');
-    } else {
-      console.log('Data inserted successfully');
-      res.status(200).send('Data inserted successfully');
-    }
-  });
+  try {
+    const result = await db.query('INSERT INTO application (firstname, lastname, email, phonenumber, jobposition) VALUES ($1, $2, $3, $4, $5)', [firstname, lastname, email, phonenumber, jobposition]);
+    console.log('Data inserted successfully');
+    res.status(200).send('Data inserted successfully');
+  } catch (error) {
+    console.error('PostgreSQL insertion error:', error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+process.on('SIGINT', async () => {
+  await db.end();
+  console.log('PostgreSQL connection closed');
+  process.exit(0);
 });
 
 app.get('/', (req,res)=> {
