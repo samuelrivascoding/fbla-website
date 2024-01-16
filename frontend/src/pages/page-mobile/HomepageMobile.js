@@ -1,5 +1,3 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
 import CompleteTitleHomeMobile from "../../components/CompleteTitleHomeMobile";
 import BottomHomeMobile from "../../components/BottomHomeMobile";
 import styles from "./HomepageMobile.module.css";

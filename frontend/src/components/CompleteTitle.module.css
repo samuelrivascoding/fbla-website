@@ -50,7 +50,7 @@
   flex-shrink: 0;
 }
 .instanceChild {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   top: 0;
@@ -60,7 +60,9 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  min-width: 75px;
+  min-height: 75px;
 }
 .titleInner {
   position: relative;
@@ -90,4 +92,14 @@
   font-size: var(--header1-size);
   color: var(--soft-grey);
   font-family: var(--smaller-bodytext);
+}
+
+@media screen and (max-width: 429px) {
+  .robosweepEmporium {
+    padding-left: 10px;
+  }
+  .instanceChild {
+    padding-right: 20px;
+
+  }
 }

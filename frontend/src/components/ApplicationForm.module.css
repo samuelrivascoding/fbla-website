@@ -50,7 +50,7 @@
 }
 
 .invalidInput {
-  border: 1px solid lightcoral; /* Light red border for invalid input */
+  border: 1px solid lightcoral;
 }
 .firstname,
 .lastname {
@@ -144,3 +144,23 @@ select {
   font-family: var(--paragraph-ibm-plex-sans-regular);
   max-width: 1000px;
 }
+
+@media (max-width: 430px) {
+  .textBlock {
+    width: 75%;
+  }
+  .textBlock4 {
+    width: 81%
+  }
+  .jobposition,.firstname,
+  .lastname {
+    padding-left: 80px;
+  }
+  .applicationForm1 {
+    font-size: 35px;
+  }
+  .button {
+    margin-top: 10px;
+  }
+}
+

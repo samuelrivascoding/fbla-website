@@ -4,7 +4,7 @@
   left: calc(50% - 58px);
   width: 116px;
   height: 88px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .vectorWrapper {
   position: relative;
@@ -107,4 +107,14 @@
     align-items: center;
     justify-content: center;
   }
+
+  .frameChild {
+    left: calc(50% - 20px);
+    transform: scale(0.8)
+  }
+
+  .robosweepEmporium {
+    transform: scale(0.9)
+  }
 }
+

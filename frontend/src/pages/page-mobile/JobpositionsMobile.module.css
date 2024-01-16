@@ -140,3 +140,21 @@
   width: 100%;
   height: 619px;
 }
+
+@media screen and (max-width: 429px) {
+  .photos {
+    transform: scale(0.90);
+  }
+
+  .textbody {
+    width: 100%;
+    right: auto;
+  }
+
+  .completeInfoChild {
+    top: -10px;
+  }
+
+  
+
+}
