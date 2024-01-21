@@ -19,12 +19,10 @@ const ErrorPopUp = ({ onClose, errorMessage = "An error occurred." }) => {
   return (
     <p className={`${styles.errorText} ${isActive && styles.active}`}
     onClick={() => {
-      setIsActive(false); // Trigger the fade-out effect
-
-      // Wait for the transition to complete before triggering onClose
+      setIsActive(false);
       setTimeout(() => {
         onClose();
-      }, 300); // Adjust the time based on your CSS transition duration
+      }, 300);
     }}>
       {errorMessage}
     </p>

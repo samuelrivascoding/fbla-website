@@ -10,16 +10,16 @@ body {
   --paragraph-ibm-plex-sans-regular: "IBM Plex Sans";
 
   /* font sizes */
-  --bodytext-size: 8px;
+  --bodytext-size: 15px;
   --maintext-size: 17px;
   --paragraph-ibm-plex-sans-regular-size: 16px;
   --header1-size: 32px;
-  --smaller-bodytext-size: 6px;
+  --smaller-bodytext-size: 13px;
   --robo-mobile-size: 25px;
   --maintext1-size: 13px;
   --largerbodytext1-size: 18px;
   --header-size: 65px;
-  --font-size-4xs-4: 8.4px;
+  --font-size-4xs-4: 12px;
   --robo-size: 50px;
   --bodytext1-size: 12px;
 

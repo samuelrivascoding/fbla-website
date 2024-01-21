@@ -8,7 +8,8 @@
   font-family: inherit;
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
 
 }
 .benefitsForWorkingHereWrapper {
@@ -21,11 +22,11 @@
   padding: 4.912280559539795px;
 }
 .frameChild {
-  position: absolute;
+  position: relative;
   top: 4.9px;
   left: 4.9px;
   background-color: var(--black);
-  width: 301.2px;
+  width: 100%;
   height: 2.5px;
 }
 .titleInner {
@@ -34,8 +35,8 @@
   height: 12.3px;
 }
 .title {
-  width: 298.4px;
-  height: 78.6px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,24 +55,25 @@
 .weInvestIn {
   line-height: 170%;
   width: 192.1px;
-  height: 51.9px;
 }
 .continuosGrowth,
 .weInvestInOurEmployeesGrWrapper {
   align-self: stretch;
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: flex-start;
 }
 .weInvestInOurEmployeesGrWrapper {
-  flex-direction: row;
+  flex-direction: column;
   padding: 4.912280559539795px 0;
   font-size: var(--smaller-bodytext-size);
 }
+
+
 .continuosGrowth {
   flex-direction: column;
-  gap: 4.91px;
+  gap:15px;
 }
 .adoptARoomba1,
 .allOfOur {
@@ -86,7 +88,6 @@
 .allOfOur {
   line-height: 170%;
   width: 192.1px;
-  height: 56.3px;
 }
 .adoptARoomba {
   align-self: stretch;
@@ -95,6 +96,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 15px;
+
 }
 .communityAndCollaboration1 {
   align-self: stretch;
@@ -108,7 +111,6 @@
   line-height: 170%;
   display: inline-block;
   width: 192.1px;
-  height: 42.6px;
   flex-shrink: 0;
 }
 .communityAndCollaboration {
@@ -121,8 +123,8 @@
   gap: 10.32px;
 }
 .alltext {
-  width: 301.6px;
-  height: 239.7px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -168,14 +170,13 @@
   box-sizing: border-box;
 }
 .buttons {
-  width: 305.5px;
+  width: 100%;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center; 
   gap: 28px;
 }
 .textbody {
-  position: absolute;
+  position: relative;
   height: 99.94%;
   width: 72.86%;
   top: 0.06%;
@@ -184,7 +185,7 @@
   left: 2.21%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .pexelsJensMahnke8448741Icon {
@@ -199,6 +200,7 @@
   overflow: hidden;
   max-height: 100%;
   object-fit: cover;
+  display: none;
 }
 .pexelsJensMahnke8448741 {
   position: absolute;
@@ -212,6 +214,7 @@
   flex: 1;
   position: relative;
   background-color: var(--soft-grey);
+  
 }
 .benefits,
 .benefitsMobile {
@@ -233,26 +236,55 @@
   position: relative;
   background-color: var(--soft-grey);
   width: 100%;
-  height: 542.3px;
+  height: auto;
+
 }
 
-@media screen and (max-width: 429px) {
-  .pexelsJensMahnke8448741 {
-    transform: scale(0.75);
-  }
-  .alltext {
-    padding-left: 20px; /* Adjust the left padding for smaller screens */
-  }
-  .buttons {
-    padding-left: 20px;
+.continuousLearningAnd,
+.weInvestIn,
+.adoptARoomba1,
+.allOfOur,
+.communityAndCollaboration1,
+.workAlongsideLikeMinded {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.weInvestIn,
+.allOfOur,
+.workAlongsideLikeMinded {
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 430px){
+  .pexelsJensMahnke8448741{
+    display: none;
   }
 
-  .title {
-    padding-left: 20px;
+
+  .content {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    background-color: var(--soft-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  .frameChild {
-    top: 0px;
+  .benefits {
+    text-align: center;
   }
 
+  .weInvestIn,
+  .allOfOur,
+.workAlongsideLikeMinded {
+  white-space: normal;
+}
+
+  
 }

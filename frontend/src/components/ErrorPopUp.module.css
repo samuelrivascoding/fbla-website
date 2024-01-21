@@ -12,5 +12,5 @@
 }
 
 .errorText.active {
-  opacity: 1; /* Change opacity to 1 to fade in */
+  opacity: 1;
 }

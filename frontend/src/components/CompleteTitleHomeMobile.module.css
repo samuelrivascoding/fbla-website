@@ -5,6 +5,7 @@
   width: 116px;
   height: 88px;
   object-fit: contain;
+  transform: scale(1.5);
 }
 .vectorWrapper {
   position: relative;
@@ -110,7 +111,7 @@
 
   .frameChild {
     left: calc(50% - 20px);
-    transform: scale(0.8)
+    transform: scale(1.25)
   }
 
   .robosweepEmporium {

@@ -99,7 +99,7 @@
 .content,
 .textbody {
   justify-content: center;
-  padding: 14.736842155456543px 0;
+  padding: 14.736842155456543px 15px;
   gap: 8.84px;
 }
 .content {
@@ -125,7 +125,6 @@
   position: relative;
   background-color: var(--soft-grey);
   width: 100%;
-  height: 742px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -133,4 +132,52 @@
   font-size: var(--robo-mobile-size);
   color: var(--black);
   font-family: var(--smaller-bodytext);
+}
+
+@media (max-width: 430px) {
+
+  .content {
+    padding: 0;
+    gap: 14.25px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .textbodyInner {
+    text-align: center;
+    align-items: center;
+  }
+
+  .textbody {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutUs1,.aboutUsWrapper, .aboutUs {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutUs{
+    padding-bottom: 20px;
+  }
+
+  .aboutUsWrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contentInner {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
 }

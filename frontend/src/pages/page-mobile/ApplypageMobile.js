@@ -17,15 +17,15 @@ const ApplypageMobile = () => {
       <main className={styles.applypage}>
         <CompleteTitle
           onButtonClick={onButtonClick}
-          titleRight="10.22%"
-          titleLeft="14.03%"
+          titleRight="10.21%"
+          titleLeft="14.02%"
           completeTitleMobileHeight="114.8px"
           buttonPadding="0"
           buttonTop="calc(50% - 51.6px)"
           buttonLeft="calc(50% - 151px)"
           buttonBorderRadius="2.95px"
-          buttonWidth="37.8px"
-          buttonHeight="15.7px"
+          buttonWidth="50px"
+          buttonHeight="20px"
           buttonRight="unset"
           buttonDisplay="unset"
           buttonFlexDirection="unset"
@@ -48,7 +48,7 @@ const ApplypageMobile = () => {
           labelWidth1="100%"
           labelTop1="0px"
           labelLeft1="0px"
-          labelFontSize="8px"
+          labelFontSize="12px"
           labelAlignSelf="unset"
           titleHeight="69.08%"
           titleWidth="75.76%"
@@ -59,7 +59,7 @@ const ApplypageMobile = () => {
           rOBOSWEEPEMPORIUMWidth="236.5px"
           ellipseDivWidth="73.8px"
           ellipseDivHeight="56.3px"
-          ellipse2="/ellipse-1@2x.png"
+          ellipse2="/ellipse-111@2x.png"
         />
         <ApplicationForm
           applicationFormFontSize="32px"

@@ -14,13 +14,13 @@ const ApplicationForm = () => {
     lastname: '',
     email: '',
     phonenumber: '',
-    jobposition: 'customersupportspecialist', // Default value
+    jobposition: 'customersupportspecialist',
   });
 
   const [showErrorPopup, setShowErrorPopup] = useState(false);
   const [errorMessage, setErrorMessage] = useState("Error! Please fill out all fields.");
   const [emailValid, setEmailValid] = useState(true);
-  const [phoneNumberValid, setPhoneNumberValid] = useState(true); // Add this line
+  const [phoneNumberValid, setPhoneNumberValid] = useState(true);
   
 
   const onInputChange = (e) => {

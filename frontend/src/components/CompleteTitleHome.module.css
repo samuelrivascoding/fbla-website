@@ -84,14 +84,14 @@
   position: absolute;
   height: 44.27%;
   width: 93.8%;
-  top: 30.56%;
+  top: 39.56%;
   right: 4.25%;
   bottom: 25.17%;
   left: 1.95%;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: var(--padding-12xs) 0;
   box-sizing: border-box;
   gap: var(--gap-58xl);
