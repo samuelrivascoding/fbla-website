@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3005;
+const ORIGIN = process.env.ORIGIN;
 
 const { Client } = require('pg');
 
@@ -11,7 +12,12 @@ const dbConfig = {
 };
 
 app.use(bodyParser.json());
-app.use(cors());
+
+const corsOptions = {
+  origin: ORIGIN,
+};
+
+app.use(cors(corsOptions));
 
 const db = new Client(dbConfig);
 
@@ -19,12 +25,11 @@ db.connect()
   .then(() => console.log('Connected to PostgreSQL database'))
   .catch(err => {
     console.error('Error connecting to PostgreSQL:', err);
-    process.exit(1); // Exit the process on connection error
+    process.exit(1);
   });
 
 db.on('error', (err) => {
   console.error('PostgreSQL connection error:', err);
-  // Attempt to reconnect
   db.connect()
     .then(() => console.log('Reconnected to PostgreSQL database'))
     .catch(err => console.error('Error reconnecting to PostgreSQL:', err));
