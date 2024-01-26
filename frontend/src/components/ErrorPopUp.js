@@ -11,7 +11,6 @@ const ErrorPopUp = ({ onClose, errorMessage = "An error occurred." }) => {
     }, 100);
 
     return () => clearTimeout(timeoutId);
-    console.log('ErrorPopUp unmounted');
   }, [errorMessage]);
 
 

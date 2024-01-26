@@ -20,7 +20,6 @@ import Applypage2Mobile from "./pages/page-mobile/Applypage2Mobile";
 import BenefitsMobile from "./pages/page-mobile/BenefitsMobile";
 
 
-
 function App() {
   const action = useNavigationType();
   const location = useLocation();
@@ -46,67 +45,6 @@ function App() {
       window.scrollTo(0, 0);
     }
   }, [action, pathname]);
-
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/applypagemobile":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/jobpositionsmobile":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/homepagemobile":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/applypage2mobile":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/benefitsmobile":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/applypage2":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/applypage":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/benefits":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/jobpositions":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
 
   return (
     <div>

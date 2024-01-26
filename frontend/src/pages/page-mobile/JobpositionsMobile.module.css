@@ -43,7 +43,7 @@
   align-self: stretch;
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .jobPositions {
   margin: 0;
@@ -51,7 +51,8 @@
   font-size: inherit;
   font-weight: 400;
   font-family: inherit;
-  justify-content: center;
+  justify-content: flex-end;
+  
 }
 .jobPositionsWrapper {
   flex-direction: column;
@@ -61,8 +62,9 @@
   position: relative;
   border-top: 2px solid var(--black);
   box-sizing: border-box;
-  width: 188.6px;
+  width: 90%;
   height: 2px;
+  left: 5%;
 }
 .customerSupportSpecialist,
 .providingCustomerService {
@@ -100,7 +102,7 @@
   gap: 26.04px;
   text-align: right;
   font-size: var(--bodytext-size);
-  overflow-y: auto; /* Added overflow-y for scrolling */
+  overflow-y: auto;
 
 }
 .completeInfo {

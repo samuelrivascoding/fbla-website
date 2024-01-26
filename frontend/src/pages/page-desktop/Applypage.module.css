@@ -21,13 +21,13 @@
 .facebookJobsJobFacebookBra {
   position: absolute;
   top: calc(50% - 156.55px);
-  left: calc(50% - 152px);
+  left: calc(50% - 156.55px);
   width: 304px;
   height: 313px;
 }
 .image {
   position: relative;
-  width: 326px;
+  width: 456px;
   height: 165.1px;
 }
 .content {
